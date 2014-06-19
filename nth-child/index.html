@@ -1,0 +1,87 @@
+---
+layout: sections
+---
+
+<!-- THE HEADER -->
+<header>
+	<nav>
+	  <ul>
+	    <li>
+	    	<i class="fa fa-bars"></i>
+	    </li>
+	    
+	    <li ng-class="{ active: $state.includes('presentations') }">
+	    	How To Make Your Designer's Life Easier
+	    </li>
+
+	    <li class="brand">
+				<i class="fa fa-cog"></i>
+	    </li>
+	  </ul>
+	</nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main ng-if="activeTab == 'home'">
+	<h3>Home</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+<main ng-if="activeTab == 'stream'">
+	<h3>Stream</h3>
+	<p class="stream-item" ng-repeat="item in streamItems track by item.name">{{ "{{ item.name " }}}}</p>
+	
+	<p class="ref"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child"><i class="fa fa-share-square-o"></i> MDN :nth-child</a></p> 
+
+	<p class="ref"><a target="_blank" href="http://nthmaster.com/"><i class="fa fa-share-square-o"></i> Mastering the :nth-child</a></p>
+</main>
+
+<main ng-if="activeTab == 'profile'">
+	<h3>Profile</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+<main ng-if="activeTab == 'settings'">
+	<h3>Settings</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+
+<!-- THE TABS NAVIGATION FOOTER -->
+<menu class="tab-bar" type="toolbar">
+	<div class="tab-link" 
+		ng-click="tab('home')" 
+		ng-class="{ active: activeTab =='home' }">
+			Home {{activeTab}}
+	</div><!-- 
+	 --><div class="tab-link" 
+	 	ng-click="tab('stream')" 
+	 	ng-class="{ active: activeTab =='stream' }">
+	 		Stream
+	 </div><!-- 
+	 --><div class="tab-link" 
+	 	ng-click="tab('profile')" 
+	 	ng-class="{ active: activeTab =='profile' }">
+	 		Profile
+	 </div><!-- 
+	 --><div class="tab-link" 
+	 	ng-click="tab('settings')" 
+	 	ng-class="{ active: activeTab =='settings' }">
+	 		Settings
+	 </div>
+</menu>
