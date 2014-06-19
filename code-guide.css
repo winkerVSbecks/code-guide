@@ -103,6 +103,10 @@ blockquote:last-child{
   margin-bottom: 0;
 }
 
+.strikethrough {
+  text-decoration: line-through
+}
+
 
 
 /*
