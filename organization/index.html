@@ -1,0 +1,28 @@
+---
+layout: sections
+---
+<h1>Organization and Isolation</h1>
+<div class="css">
+	<div class="ui">
+		UI-Components: Buttons, Accordion, Menu, Nav, etc.
+	</div>
+	<div class="views">
+		The Views
+	</div>
+	<div class="core">The Core: Grid, Layout, Typography</div>
+</div>
+
+<div class="toc-full">
+  <ul>
+  	<li>No in-line styles</li>
+  	<li>For Core and UI-Components, organize sections of code by component.</li>
+  	<li>Use consistent indentation!</li>
+    <li>The UX Lead/Designer owns the Core and UI-Components. Developers should not modify them without consultation.</li>
+    <li>Namespace each view/page. Wrap all the styles for a view with a Class name to properly isolate code.</li>
+    <li>Set base padding and margin sizes. Then use variables to scale up/down. <em>eg: base-padding/3, base-padding*2, etc.</em></li>
+    <li>Only use variables for z-index. And <strong>z-index: 9999999</strong> is always the wrong answer.</li>
+    <li>Learn to target elements correctly. Using an <strong>ID</strong> or <strong>!important</strong> is generally the wrong answer.</li>
+  </ul>
+
+  <p class="ref"><a target="_blank" href="http://css-tricks.com/sass-vs-less/"><i class="fa fa-share-square-o"></i> Understanding SASS and LESS</a> <a class="pull-right" href="/"><i class="fa fa-mail-reply"></i> home</a></p>
+</div>
