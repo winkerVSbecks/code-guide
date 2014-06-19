@@ -1,6 +1,7 @@
 name:          How To Make Your Designer's Life Easier 
 description:   A modified version of code Guide by @mdo 
 url:           http://winkervsbecks.github.io/code-guide/
+baseurl:       http://winkervsbecks.github.io/code-guide/
 
 markdown:      rdiscount
 permalink:     pretty
