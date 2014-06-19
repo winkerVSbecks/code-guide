@@ -149,8 +149,8 @@ permalink: /code-guide.html
 <div class="section" id="html-attribute-order">
   <div class="col">
     <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
-    <ul>
+    <p class="strikethrough">HTML attributes should come in this particular order for easier reading of code.</p>
+    <ul class="strikethrough">
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
       <li><code>data-*</code></li>
@@ -158,7 +158,9 @@ permalink: /code-guide.html
       <li><code>title</code>, <code>alt</code></li>
       <li><code>aria-*</code>, <code>role</code></li>
     </ul>
-    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+    <p class="strikethrough">Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+
+    <p><em>Enforcing attribute and declaration orders will be a challenge. If you want to follow it go for it, but you don't have to.</em></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
