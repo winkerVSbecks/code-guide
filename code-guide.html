@@ -272,9 +272,14 @@ permalink: /code-guide.html
 
 <div class="section" id="css-single-declarations">
   <div class="col">
-    <h3>Single declarations</h3>
-    <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <h3 class="strikethrough">Single declarations</h3>
+    <p class="strikethrough">In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
+    <p class="strikethrough">The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+
+    <p>Bertrand says:</p>
+    <blockquote>I don't like the idea of one-liners, even for short styles. They make diffs way harder to understand, you're forced to parse them differently than the rest of the code and they invariably lead to misuse.</blockquote>
+
+    <p><em>I personally like to use one-liners. It makes the code much more readable.</em></p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
