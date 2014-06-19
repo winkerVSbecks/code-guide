@@ -186,6 +186,37 @@ pre code {
   background-color: #fff;
 }
 
+.toc-full {
+  width: 100%;
+  margin: 0;
+}
+.toc-full ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.toc-full ul li {
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.toc-full ul li:nth-child(even) {
+  background: #F7F7F9;
+}
+.toc-full ul li a {
+  padding-left: 3rem;
+  width: 100%;
+  display: block;
+}
+
+.toc-full ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.toc-full ul li:hover {
+  background-color: #08c;
+}
 
 /*
  * Masthead
