@@ -114,6 +114,7 @@ body {
 	width: 100%;
 	clear: both;
 	overflow: overlay;
+	margin-top: 40px;
 }
 .css .core,
 .css .ui,
