@@ -109,7 +109,13 @@ p.ref {
 	width: 25%;
 	background-color: #eee;
 	text-align: center;
-
+  
+  /* 
+   * Vertical centering of text. 
+   * Set line-height equal to height.
+   * This doesn't work with %. Has to
+   * be px value.
+   */
   height: 80px;
   line-height: 80px;
 }

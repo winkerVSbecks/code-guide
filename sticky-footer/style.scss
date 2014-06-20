@@ -229,7 +229,13 @@ main {
     padding: 10px;
     background-color: #00b4ff;
     @include display-flex();
-
+    /*
+     * Since the main section
+     * is filling all space vertically.
+     * We can just give the sticky footer
+     * a fixed position with bottom equal
+     * to the height of the tab-bar.
+     */
     position: fixed;
     left: 0px;
     bottom: 80px;

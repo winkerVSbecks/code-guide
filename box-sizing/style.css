@@ -99,6 +99,13 @@ p.ref {
 	padding: 0;
 }
 
+/* 
+ * Simple inline block elements with width: 25%
+ * adding a border without using box-sizing: border-box
+ * will break the layout because by default width doesn't
+ * include border and the:
+ * total width = 25% * 4 + 1px * 4 > 100%
+ */
 .tab-bar .tab-link {
 	display: inline-block;
 	width: 25%;

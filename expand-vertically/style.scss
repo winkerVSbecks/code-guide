@@ -144,9 +144,16 @@ p.ref {
 
 /*
  * Parent Containers
+ * Need to set their heights as 100%
+ * otherwise the main content will 
+ * not expand to fill all vertical space.
  */
 html { height: 100%; }
 body {
+  /*
+   * The Body is a flex container
+   * with alignment set to column.
+   */
   @include display-flex;
   @include flex-direction(column);
   height: 100%;
@@ -168,7 +175,6 @@ header nav {
     color: #fff;
     background-color: #515151;
     list-style: none;
-
     @include display-flex;
     @include flex-direction(row);
 
@@ -191,8 +197,12 @@ header nav {
  * Main Content
  */
 main {
+  /*
+   * The main section is a stretchy 
+   * flex element. It will fill all
+   * available vertical space.
+   */
   @include flex(1);
-
   padding: 10px;
 }
 

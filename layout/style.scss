@@ -101,6 +101,14 @@ p.ref {
 
 /*
  * Flexbox Related classes
+ * 
+ * Display-flex() sets an element to be a
+ * flex-container. Flex() can be used to
+ * set elements as fixed or stretchy flex 
+ * elements. flex-direction() allows us to
+ * set alignment for elements. Column aligns
+ * elements vertically. Row aligns elements 
+ * horizontally. 
  */
 @mixin display-flex {
   display: -webkit-box;
@@ -156,11 +164,20 @@ header nav {
     color: #fff;
     background-color: #515151;
     list-style: none;
-    
+    /*
+     * The ul is a flex container
+     * with alignment set to row
+     */
     @include display-flex;
     @include flex-direction(row);
 
     li {
+      /*
+       * The title in the middle 
+       * is a stretchy flex element.
+       * It will fill all available
+       * horizontal space.
+       */
       @include flex(1);
       height: 80px;
       line-height: 80px;
@@ -168,6 +185,10 @@ header nav {
 
       &:first-child,
       &:last-child {
+        /*
+         * The two icons are 
+         * fixed with flex elements
+         */
         @include flex(0 0 50px);
       }
     }
